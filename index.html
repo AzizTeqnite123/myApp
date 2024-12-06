@@ -8,10 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="Assets/Css/responsive.css">
     <title>Home</title>
 </head>
 
 <body>
+    <div class="overlayForPopupDIscount" id="overlay-pop-up-discount"></div>
+    <div class="popupfordiscount">
+        <button id="discountButton">GET 10% OFF</button>
+    </div>
+    <div class="popupfordiscountWrapcontent" id="discountPopupSidefixed">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>You get 10% off your next purchase. Use code: <strong>DISCOUNT10</strong></p>
+        </div>
+        <div class="closeDicsPopUp" id="closePopup">
+            <img src="Assets/Images/close-line.svg" alt="">
+        </div>
+    </div>
+
+
     <!-- headerTopBar -->
     <div class="utility-bar headerTopBar">
         <div class="page-width">
@@ -56,7 +72,8 @@
                 <div class="header-icons">
                     <ul>
                         <li><a href="#"><img src="Assets/Images/fi-rr-search.svg" alt=""></a><span>Search</span></li>
-                        <li><a href="#"><img src="Assets/Images/fi-rr-user.svg" alt=""></a><span>Login</span></li>
+                        <li class="loginpr"><a href="#"><img src="Assets/Images/fi-rr-user.svg"
+                                    alt=""></a><span>Login</span></li>
                         <li class="cart-header"><a href="#"><img src="Assets/Images/fi-rr-shopping-bag.svg" alt=""></a>
                         </li>
                     </ul>
@@ -122,7 +139,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ban-img" data-aos="fade-right" data-aos-duration="800">
+                <div class="ban-img" data-aos="fade-up" data-aos-duration="800">
                     <img src="Assets/Images/ban-img.png" alt="">
                 </div>
             </div>
@@ -138,7 +155,7 @@
                     <p>At Vim & Vigor, our goal is to make sure you get the best results possible. We're here to help
                         you personally!</p>
                 </div>
-                <div class="main-btn" data-aos="fade-down" data-aos-duration="600">
+                <div class="main-btn" data-aos="fade-up" data-aos-duration="600">
                     <a href="#">Contact Us</a>
                 </div>
             </div>
@@ -331,7 +348,7 @@
                 <div class="img-wth-cnt-image" data-aos="fade-up" data-aos-duration="500">
                     <img src="Assets/Images/work-left.jpg" alt="">
                 </div>
-                <div class="img-wth-cnt-content" data-aos="zoom-out-left" data-aos-duration="600">
+                <div class="img-wth-cnt-content" data-aos="fade-up" data-aos-duration="600">
                     <p><em>Our health</em></p>
                     <h2>SUPPLEMENTS WORK!</h2>
                     <h5>They are:</h5>
@@ -459,7 +476,7 @@
                     </div>
                 </div>
             </div>
-            <div class="readmore-btn main-btn" data-aos="zoom-out" data-aos-duration="900">
+            <div class="readmore-btn main-btn" data-aos="fade-up" data-aos-duration="900">
                 <a href="#">Read More</a>
             </div>
         </div>
@@ -500,7 +517,7 @@
                     </div>
                 </div>
             </div>
-            <div class="step-bx-btn main-btn" data-aos="zoom-out" data-aos-duration="800">
+            <div class="step-bx-btn main-btn" data-aos="fade-up" data-aos-duration="800">
                 <a href="#">SHOP</a>
                 <a href="tel:8006228446">Call for personalized assistance at 800-622-8446</a>
             </div>
@@ -512,7 +529,7 @@
     <section class="discountSec">
         <div class="container">
             <div class="dcs-row">
-                <div class="dcs-cnt" data-aos="zoom-in-up" data-aos-duration="400">
+                <div class="dcs-cnt" data-aos="fade-up" data-aos-duration="400">
                     <p><em>Featured product</em>
                     </p>
                     <h2>buy 10 get 3 free</h2>
@@ -521,7 +538,7 @@
                         <a href="#">Learn more</a>
                     </div>
                 </div>
-                <div class="dcs-img" data-aos="zoom-in-down" data-aos-duration="500">
+                <div class="dcs-img" data-aos="fade-up" data-aos-duration="500">
                     <img src="Assets/Images/free-img.png" alt="">
                 </div>
             </div>
@@ -532,7 +549,7 @@
     <!-- nutritionSuplliment -->
     <section class="nutritionSuplliment">
         <div class="container">
-            <div class="nut-sup-row" data-aos="zoom-in-down" data-aos-duration="700">
+            <div class="nut-sup-row" data-aos="fade-up" data-aos-duration="700">
                 <div class="nut-sup-left">
                     <img src="Assets/Images/nut-sup-left.jpg" alt="">
                 </div>
@@ -556,7 +573,7 @@
     <!-- bgWithText -->
     <div class="bgWithText">
         <div class="container">
-            <div class="bg-wthtxt-row" data-aos="zoom-in-up" data-aos-duration="700">
+            <div class="bg-wthtxt-row" data-aos="fade-up" data-aos-duration="700">
                 <p><em>Still having doubts?</em></p>
                 <a href="#"><span>Call us today:</span>
                     (800) 622-8446
@@ -587,7 +604,7 @@
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Videos & Photos</a></li>
-                            <li><a href="#">FAQ'ss</a></li>
+                            <li><a href="#">FAQ's</a></li>
                             <li><a href="#">Membership Program</a></li>
                             <li><a href="#">Referral Program</a></li>
                             <li><a href="#">Become an Affiliate</a></li>
@@ -626,7 +643,7 @@
                             <li><a href="tel:8006228446"><span>Phone:</span>(800) 622-8446</a></li>
                             <li><a href="mailto:"><span>Email:</span>info@vimandvigor.com</a></li>
                             <li><a href="https://maps.app.goo.gl/DiHjHUoAU1cS9Vj17"><span>Location:</span>Vim & Vigor,
-                                    Inc. 26500 Agoura Road Suite 244 Calabasas, CA 91302</a></li>
+                                    Inc.26500 Agoura Road Suite 244Calabasas, CA 91302</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,29 +1,68 @@
 AOS.init();
 
-document.addEventListener("DOMContentLoaded", function () {
-    const readMoreButtons = document.querySelectorAll('.read-more-rev'); // Select all "Read more" buttons
+function readMorerev() {
+    document.addEventListener("DOMContentLoaded", function () {
+        const readMoreButtons = document.querySelectorAll('.read-more-rev');
 
-    // Loop over each "Read more" button
-    readMoreButtons.forEach(button => {
-        const textElement = button.previousElementSibling; // Get the corresponding text element (assuming the button is after the text)
-        const fullText = textElement.innerText;  // Get the full text from the paragraph, preserving any special characters
+        readMoreButtons.forEach(button => {
+            const textElement = button.previousElementSibling;
+            const fullText = textElement.innerText;
 
-        // Split the text into words and limit it to 15 words
-        const words = fullText.split(' ');
-        const initialText = words.slice(0, 15).join(' ') + '...'; // Show only 15 words initially
+            const words = fullText.split(' ');
+            const initialText = words.slice(0, 15).join(' ') + '...';
 
-        // Set the initial truncated text
-        textElement.textContent = initialText;
+            textElement.textContent = initialText;
 
-        // When the "Read more" button is clicked, toggle between full text and truncated text
-        button.addEventListener('click', function () {
-            if (textElement.textContent !== fullText) {
-                textElement.textContent = fullText;
-                button.textContent = 'Read less'; // Change button text to "Read less"
-            } else {
-                textElement.textContent = initialText;
-                button.textContent = 'Read more'; // Reset to show "Read more"
-            }
+            button.addEventListener('click', function () {
+                if (textElement.textContent !== fullText) {
+                    textElement.textContent = fullText;
+                    button.textContent = 'Read less';
+                } else {
+                    textElement.textContent = initialText;
+                    button.textContent = 'Read more';
+                }
+            });
         });
     });
-});
+}
+readMorerev()
+
+function discountPopUpPercentage() {
+    const togglePopupDiscount = () => {
+        const popup = document.getElementById("discountPopupSidefixed");
+        const overlay = document.getElementById("overlay-pop-up-discount");
+
+        if (popup.style.display === "none" || popup.style.display === "") {
+            popup.style.display = "block";
+            overlay.style.display = "block";
+
+            setTimeout(() => {
+                overlay.style.opacity = "1";
+                popup.style.opacity = "1";
+                popup.style.transform = "translate(-50%, -50%) scale(1)";
+            }, 10);
+        } else {
+            overlay.style.opacity = "0";
+            popup.style.opacity = "0";
+            popup.style.transform = "translate(-50%, -50%) scale(0.5)";
+
+            setTimeout(() => {
+                overlay.style.display = "none";
+                popup.style.display = "none";
+            }, 300);
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const discountButton = document.getElementById("discountButton");
+        const closePopup = document.getElementById("closePopup");
+
+        discountButton.addEventListener("click", togglePopupDiscount);
+
+        closePopup.addEventListener("click", togglePopupDiscount);
+
+        setTimeout(togglePopupDiscount, 2000);
+    });
+
+}
+discountPopUpPercentage()

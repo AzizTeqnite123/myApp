@@ -1084,6 +1084,14 @@
 
 @media only screen and (max-width : 575px) {
 
+    .popupfordiscountWrapcontent {
+        width: 90%;
+    }
+
+    .popupfordiscountWrapcontent .popup-content h2{
+        font-size: 20px;
+    }
+
     .container,
     .page-width {
         padding: 0 15px !important;

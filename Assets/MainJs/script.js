@@ -61,7 +61,7 @@ function discountPopUpPercentage() {
 
         closePopup.addEventListener("click", togglePopupDiscount);
 
-        setTimeout(togglePopupDiscount, 5000);
+        setTimeout(togglePopupDiscount, 3000);
     });
 
 }

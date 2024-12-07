@@ -708,6 +708,11 @@
         line-height: 21px;
     }
 
+    .cent-head>p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
     /* home css */
 
     /* colagenate css */
@@ -1168,7 +1173,14 @@
         font-size: 12px;
     }
 
+    .cent-head>p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     /* home css */
+
+    /* colagenate css */
 
     .innerBanner .ban-head h1,
     .innerBanner .ban-head h1>i {
@@ -1216,6 +1228,7 @@
     }
 
     /* colagenate css */
+
 
 }
 
@@ -1632,6 +1645,11 @@
     }
 
     .foot-links-pr ul li a>span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .cent-head>p{
         font-size: 14px;
         line-height: 18px;
     }

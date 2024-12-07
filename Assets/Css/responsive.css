@@ -21,12 +21,12 @@
         margin: 0;
     }
 
-    .ban-head h1 {
+    .ban-head h1>em {
         font-size: 30px;
         line-height: 50px;
     }
 
-    .ban-head h1>em,
+    .ban-head h1,
     .ban-head h1>i {
         font-size: 40px;
         line-height: 50px;
@@ -225,6 +225,25 @@
 
     /* home css */
 
+    /* colagenate css */
+
+    .innerBanner .ban-head h1 {
+        font-size: 38px;
+        line-height: 62px;
+    }
+
+    .innerBanner .ban-head h1>i {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    .img-wth-cnt-content p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* colagenate css */
+
 }
 
 @media only screen and (max-width : 1024px) {
@@ -234,6 +253,23 @@
         padding: 0 20px;
         max-width: 100%;
     }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
+
+    .popupfordiscount button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .popupfordiscount {
+        left: -63px;
+    }
+
+    .popupfordiscount {
+        top: 18.5rem;
+    }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
 
     /* home css */
 
@@ -264,12 +300,12 @@
         width: 18px;
     }
 
-    .ban-head h1 {
+    .ban-head h1>em {
         font-size: 26px;
         line-height: 40px;
     }
 
-    .ban-head h1>em,
+    .ban-head h1,
     .ban-head h1>i {
         font-size: 35px;
         line-height: 45px;
@@ -673,6 +709,41 @@
     }
 
     /* home css */
+
+    /* colagenate css */
+
+    .innerBanner .ban-head h1,
+    .innerBanner .ban-head h1>i {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .img-wth-cnt-content small {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .img-wth-cnt-content p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .img-wth-cnt-content:has(small) h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .bgWithText .main-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .img-wth-cnt-content .img-wht-cnt-btn {
+        margin-top: 40px;
+    }
+
+    /* colagenate css */
+
 }
 
 @media only screen and (max-width : 768px) {
@@ -682,6 +753,20 @@
         padding: 0 20px;
         max-width: 100%;
     }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
+
+    .popupfordiscount button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .popupfordiscount {
+        left: -53px;
+    }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
+
 
     /* home css */
 
@@ -694,15 +779,19 @@
         grid-template-columns: 1fr;
     }
 
-    .ban-head h1 {
+    .ban-head h1>em {
         font-size: 24px;
         line-height: 34px;
     }
 
-    .ban-head h1>em,
+    .ban-head h1 {
+        max-width: 90%;
+    }
+
+    .ban-head h1,
     .ban-head h1>i {
         font-size: 30px;
-        line-height: 40px;
+        line-height: 45px;
     }
 
     .ban-desc p {
@@ -726,6 +815,10 @@
     .chk-dsc p {
         font-size: 14px;
         line-height: 18px;
+    }
+
+    .chk-dsc p>br {
+        display: none;
     }
 
     .chk-ic-lst li .chk-ic {
@@ -857,10 +950,6 @@
 
     .img-wth-cnt-image {
         height: 450px;
-    }
-
-    .img-wth-cnt-image img {
-        object-position: top;
     }
 
     .img-wth-cnt-content>p>em {
@@ -1080,9 +1169,65 @@
     }
 
     /* home css */
+
+    .innerBanner .ban-head h1,
+    .innerBanner .ban-head h1>i {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .imageWithContent.invertedImgCnt .img-wth-cnt-content {
+        order: 2;
+    }
+
+    .imageWithContent.invertedImgCnt .img-wth-cnt-img {
+        order: 1;
+    }
+
+    .img-wth-cnt-content small {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+
+    .img-wth-cnt-content p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .imageWithContent {
+        margin: 40px 0;
+    }
+
+    .bgWithText .main-btn a {
+        font-size: 12px;
+        line-height: 17px;
+        padding: 10px 20px;
+        margin: 30px auto 0;
+    }
+
+    .img-wth-cnt-content:has(small) h5 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .img-wth-cnt-content .img-wht-cnt-btn {
+        margin-top: 30px;
+    }
+
+    /* colagenate css */
+
 }
 
 @media only screen and (max-width : 575px) {
+
+    .container,
+    .page-width {
+        padding: 0 15px !important;
+        max-width: 100%;
+    }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
 
     .popupfordiscountWrapcontent {
         width: 90%;
@@ -1092,11 +1237,17 @@
         font-size: 20px;
     }
 
-    .container,
-    .page-width {
-        padding: 0 15px !important;
-        max-width: 100%;
+    .popupfordiscount button {
+        font-size: 12px;
+        padding: 10px 20px;
+        border-radius: 5px;
     }
+
+    .popupfordiscount {
+        left: -45px;
+    }
+
+    /* sideFixed-Discount-PopUp-Button-And-PopUp-Styling-Css */
 
     /* home css */
     .announcement-bar-msg {
@@ -1154,12 +1305,12 @@
         gap: 10px;
     }
 
-    .ban-head h1 {
+    .ban-head h1>em {
         font-size: 20px;
         line-height: 30px;
     }
 
-    .ban-head h1>em,
+    .ban-head h1,
     .ban-head h1>i {
         font-size: 27px;
         line-height: 36px;
@@ -1480,5 +1631,45 @@
         margin-top: 0;
     }
 
+    .foot-links-pr ul li a>span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     /* home css */
+
+    /* colagenate css */
+
+    .ban-head h1 {
+        max-width: 100%;
+    }
+
+    .innerBanner .ban-head h1,
+    .innerBanner .ban-head h1>i {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .img-wth-cnt-content small {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 10px 0;
+    }
+
+    .img-wth-cnt-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .imageWithContent {
+        margin: 30px 0;
+    }
+
+    .img-wth-cnt-content:has(small) h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* colagenate css */
+
 }

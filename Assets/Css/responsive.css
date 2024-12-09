@@ -723,17 +723,17 @@
         line-height: 48px;
     }
 
-    .img-wth-cnt-content small {
+    .img-wth-cnt-content p {
         font-size: 16px;
         line-height: 24px;
     }
 
-    .img-wth-cnt-content p {
+    .img-wth-cnt-content span {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .img-wth-cnt-content:has(small) h5 {
+    .img-wth-cnt-content:has(p) h5 {
         font-size: 18px;
         line-height: 25px;
     }
@@ -745,6 +745,10 @@
 
     .img-wth-cnt-content .img-wht-cnt-btn {
         margin-top: 40px;
+    }
+
+    .img-wth-cnt-image:has(video) {
+        height: 600px;
     }
 
     /* colagenate css */
@@ -1196,13 +1200,13 @@
         order: 1;
     }
 
-    .img-wth-cnt-content small {
+    .img-wth-cnt-content p {
         font-size: 14px;
         line-height: 20px;
         margin: 15px 0;
     }
 
-    .img-wth-cnt-content p {
+    .img-wth-cnt-content span {
         font-size: 16px;
         line-height: 22px;
     }
@@ -1218,13 +1222,29 @@
         margin: 30px auto 0;
     }
 
-    .img-wth-cnt-content:has(small) h5 {
+    .img-wth-cnt-content:has(p) h5 {
         font-size: 16px;
         line-height: 22px;
     }
 
     .img-wth-cnt-content .img-wht-cnt-btn {
         margin-top: 30px;
+    }
+
+    .img-wth-cnt-image:has(video) {
+        height: 450px;
+    }
+
+    .img-wth-cnt-content>h2 {
+        max-width: 70%;
+    }
+
+    .img-wth-cnt-content>h2 br {
+        display: none;
+    }
+
+    .step-box .step-decs h6 {
+        font-size: 16px;
     }
 
     /* colagenate css */
@@ -1649,7 +1669,7 @@
         line-height: 18px;
     }
 
-    .cent-head>p{
+    .cent-head>p {
         font-size: 14px;
         line-height: 18px;
     }
@@ -1668,13 +1688,13 @@
         line-height: 40px;
     }
 
-    .img-wth-cnt-content small {
+    .img-wth-cnt-content p {
         font-size: 13px;
         line-height: 18px;
         margin: 10px 0;
     }
 
-    .img-wth-cnt-content p {
+    .img-wth-cnt-content span {
         font-size: 14px;
         line-height: 18px;
     }
@@ -1683,9 +1703,22 @@
         margin: 30px 0;
     }
 
-    .img-wth-cnt-content:has(small) h5 {
+    .img-wth-cnt-content:has(p) h5 {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .img-wth-cnt-image:has(video) {
+        height: 300px;
+    }
+
+    .img-wth-cnt-content>h2 {
+        max-width: 100%;
+    }
+
+    .step-box .step-decs h6 {
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 
     /* colagenate css */

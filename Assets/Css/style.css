@@ -113,8 +113,8 @@ img {
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -157,13 +157,15 @@ img {
 }
 
 .popup-form {
+    margin: 0 auto;
     margin-top: 20px;
+    max-width: 385px;
 }
 
 .popup-form form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .popup-form form input {
@@ -206,7 +208,7 @@ img {
     text-align: center;
     color: #787878;
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .popupfordiscount button {

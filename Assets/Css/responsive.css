@@ -21,13 +21,13 @@
         margin: 0;
     }
 
-    .ban-head h1>em {
+    .ban-head h1>strong {
         font-size: 30px;
         line-height: 50px;
     }
 
     .ban-head h1,
-    .ban-head h1>i {
+    .ban-head h1>em {
         font-size: 40px;
         line-height: 50px;
     }
@@ -43,24 +43,14 @@
         line-height: 20px;
     }
 
-    .ban-btn a p {
+    .ban-btn a em {
         font-size: 15px;
         line-height: 20px;
     }
 
-    .chk-dsc p {
+    .chk-ic-lst li {
         font-size: 18px;
         line-height: 22px;
-    }
-
-    .chk-ic-lst li .chk-ic {
-        height: 25px;
-        width: 25px;
-    }
-
-    .cnt-btn-des p {
-        font-size: 20px;
-        line-height: 27px;
     }
 
     .cnt-btn-row .main-btn a {
@@ -94,7 +84,7 @@
         margin: 60px 0 60px;
     }
 
-    .bst-sl-name h3>i {
+    .bst-sl-name h3>em {
         font-size: 22px;
     }
 
@@ -109,12 +99,14 @@
         margin-top: 30px;
     }
 
-    .bst-sl-qualty li {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .bst-sl-qualty li>p {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em>p {
         font-size: 16px;
         line-height: 20px;
     }
@@ -209,12 +201,8 @@
         line-height: 40px;
     }
 
-    .bg-wthtxt-row small {
-        font-size: 22px;
-        line-height: 26px;
-    }
-
-    .bg-wthtxt-row>p {
+    .bg-wthtxt-row>p,
+    .bg-wthtxt-row>p>strong {
         font-size: 22px;
         line-height: 30px;
     }
@@ -232,7 +220,7 @@
         line-height: 62px;
     }
 
-    .innerBanner .ban-head h1>i {
+    .innerBanner .ban-head h1>em {
         font-size: 35px;
         line-height: 60px;
     }
@@ -300,13 +288,13 @@
         width: 18px;
     }
 
-    .ban-head h1>em {
+    .ban-head h1>strong {
         font-size: 26px;
         line-height: 40px;
     }
 
     .ban-head h1,
-    .ban-head h1>i {
+    .ban-head h1>em {
         font-size: 35px;
         line-height: 45px;
     }
@@ -318,7 +306,7 @@
     }
 
     .ban-btn a,
-    .ban-btn a p {
+    .ban-btn a em {
         font-size: 14px;
         line-height: 18px;
     }
@@ -327,28 +315,15 @@
         padding: 10px 20px;
     }
 
-    .chk-dsc p {
+    .chk-ic-lst li {
         font-size: 15px;
         line-height: 20px;
     }
 
-    .chk-ic-lst {
-        gap: 15px;
-    }
-
-    .chk-ic-lst li .chk-ic {
+    .chk-ic-lst li::before {
         height: 22px;
         width: 22px;
-    }
-
-    .chk-ic-lst li .chk-ic img {
-        height: 10px;
-        width: 10px;
-    }
-
-    .cnt-btn-des p {
-        font-size: 18px;
-        line-height: 22px;
+        background-size: 10px;
     }
 
     .cnt-btn-row .main-btn a {
@@ -402,12 +377,14 @@
         margin-top: 20px;
     }
 
-    .bst-sl-qualty li {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em {
         font-size: 16px;
         line-height: 22px;
     }
 
-    .bst-sl-qualty li>p {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em>p {
         font-size: 16px;
         line-height: 20px;
     }
@@ -426,7 +403,7 @@
     }
 
     .bst-sl-btn a,
-    .bst-sl-btn a span {
+    .bst-sl-btn a em {
         font-size: 14px;
         line-height: 18px;
     }
@@ -668,7 +645,8 @@
         line-height: 22px;
     }
 
-    .bg-wthtxt-row>p {
+    .bg-wthtxt-row>p,
+    .bg-wthtxt-row>p>strong {
         font-size: 18px;
         line-height: 22px;
     }
@@ -708,9 +686,9 @@
         line-height: 21px;
     }
 
-    .cent-head>p {
-        font-size: 18px;
-        line-height: 25px;
+
+    .bgWithText {
+        margin-top: 50px;
     }
 
     /* home css */
@@ -718,7 +696,7 @@
     /* colagenate css */
 
     .innerBanner .ban-head h1,
-    .innerBanner .ban-head h1>i {
+    .innerBanner .ban-head h1>em {
         font-size: 32px;
         line-height: 48px;
     }
@@ -752,6 +730,60 @@
     }
 
     /* colagenate css */
+
+    /* faqsMain */
+
+    .faqsMain {
+        padding: 50px 0 0;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .accordion-item-header::after {
+        font-size: 16px;
+        height: 26px;
+        width: 26px;
+    }
+
+    /* faqsMain */
+
+    /* contactMain */
+
+    .contactMain {
+        padding: 50px 0;
+    }
+
+    .cont-main-row {
+        padding-top: 30px;
+    }
+
+    .cont-frm-hldr .field input,
+    .cont-frm-hldr .field textarea {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 25px;
+        height: 60px;
+    }
+
+    .cont-frm-hldr .field input::placeholder,
+    .cont-frm-hldr .field textarea::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .cont-frm-hldr .field textarea {
+        height: 300px;
+    }
+
+    .cont-frm-hldr .field button {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    /* contactMain */
 
 }
 
@@ -788,7 +820,7 @@
         grid-template-columns: 1fr;
     }
 
-    .ban-head h1>em {
+    .ban-head h1>strong {
         font-size: 24px;
         line-height: 34px;
     }
@@ -798,7 +830,7 @@
     }
 
     .ban-head h1,
-    .ban-head h1>i {
+    .ban-head h1>em {
         font-size: 30px;
         line-height: 45px;
     }
@@ -816,17 +848,21 @@
     }
 
     .ban-btn a,
-    .ban-btn a p {
+    .ban-btn a em {
         font-size: 12px;
         line-height: 16px;
     }
 
-    .chk-dsc p {
+    .chk-ic-lst li ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .chk-ic-lst li {
         font-size: 14px;
         line-height: 18px;
     }
 
-    .chk-dsc p>br {
+    .chk-ic-lst li>br {
         display: none;
     }
 
@@ -902,13 +938,14 @@
         line-height: 22px;
     }
 
-    .bst-sl-qualty li>p {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em>p {
         font-size: 14px;
         line-height: 18px;
     }
 
     .bst-sl-btn a,
-    .bst-sl-btn a span {
+    .bst-sl-btn a em {
         font-size: 12px;
         line-height: 16px;
     }
@@ -1132,7 +1169,8 @@
         line-height: 20px;
     }
 
-    .bg-wthtxt-row>p {
+    .bg-wthtxt-row>p,
+    .bg-wthtxt-row>p>strong {
         font-size: 16px;
         line-height: 20px;
     }
@@ -1178,8 +1216,12 @@
     }
 
     .cent-head>p {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .bgWithText {
+        margin-top: 40px;
     }
 
     /* home css */
@@ -1187,7 +1229,7 @@
     /* colagenate css */
 
     .innerBanner .ban-head h1,
-    .innerBanner .ban-head h1>i {
+    .innerBanner .ban-head h1>em {
         font-size: 30px;
         line-height: 45px;
     }
@@ -1249,10 +1291,83 @@
 
     /* colagenate css */
 
+    /* faqsMain */
+
+    .faqsMain {
+        padding: 40px 0 0;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .accordion-item-header::after {
+        font-size: 14px;
+        height: 24px;
+        width: 24px;
+        top: 14px;
+    }
+
+    .accordion-item-header {
+        padding: 15px;
+    }
+
+    .acc-item-head {
+        max-width: 90%;
+    }
+
+    .accordion-item-body-content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .accordion-item-body-content {
+        padding: 15px;
+    }
+
+    /* faqsMain */
+
+    /* contactMain */
+
+    .contactMain {
+        padding: 40px 0;
+    }
+
+    .cont-frm-hldr .field input,
+    .cont-frm-hldr .field textarea {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 20px;
+        height: 50px;
+    }
+
+    .cont-frm-hldr .field input::placeholder,
+    .cont-frm-hldr .field textarea::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .cont-frm-hldr .field textarea {
+        height: 250px;
+    }
+
+    .cont-frm-hldr .field button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 20px;
+        margin: 10px auto 0;
+    }
+
+    .cont-frm-hldr {
+        gap: 15px;
+    }
+
+    /* contactMain */
 
 }
 
-@media only screen and (max-width : 575px) {
+@media only screen and (max-width : 576px) {
 
     .container,
     .page-width {
@@ -1338,13 +1453,13 @@
         gap: 10px;
     }
 
-    .ban-head h1>em {
+    .ban-head h1>strong {
         font-size: 20px;
         line-height: 30px;
     }
 
     .ban-head h1,
-    .ban-head h1>i {
+    .ban-head h1>em {
         font-size: 27px;
         line-height: 36px;
     }
@@ -1359,7 +1474,7 @@
     }
 
     .ban-btn a,
-    .ban-btn a p {
+    .ban-btn a em {
         width: 100%;
     }
 
@@ -1372,7 +1487,7 @@
         height: 300px;
     }
 
-    .chk-dsc p {
+    .chk-ic-lst li {
         font-size: 13px;
         line-height: 17px;
     }
@@ -1421,12 +1536,14 @@
         margin-top: 10px;
     }
 
-    .bst-sl-qualty li {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em {
         font-size: 14px;
         line-height: 20px;
     }
 
-    .bst-sl-qualty li>p {
+    .bst-sl-qualty li,
+    .bst-sl-qualty li>em>p {
         font-size: 13px;
         line-height: 16px;
     }
@@ -1606,7 +1723,8 @@
         margin-bottom: 10px;
     }
 
-    .bg-wthtxt-row>p {
+    .bg-wthtxt-row>p,
+    .bg-wthtxt-row>p>strong {
         font-size: 14px;
         line-height: 18px;
     }
@@ -1683,7 +1801,7 @@
     }
 
     .innerBanner .ban-head h1,
-    .innerBanner .ban-head h1>i {
+    .innerBanner .ban-head h1>em {
         font-size: 27px;
         line-height: 40px;
     }
@@ -1722,5 +1840,100 @@
     }
 
     /* colagenate css */
+
+    /* faqsMain */
+
+    .faqsMain {
+        padding: 30px 0 0;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .accordion-item-header::after {
+        font-size: 14px;
+        height: 24px;
+        width: 24px;
+        top: 14px;
+    }
+
+    .accordion-item-header {
+        padding: 15px;
+    }
+
+    .acc-item-head {
+        max-width: 90%;
+    }
+
+    .accordion-item-body-content p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .faqs__row {
+        padding-top: 30px;
+    }
+
+    .acc-item-head {
+        max-width: 85%;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .accordion-item-header::after {
+        font-size: 12px;
+        height: 20px;
+        width: 20px;
+        top: 14px;
+    }
+
+    /* faqsMain */
+
+    /* contactMain */
+
+    .contactMain {
+        padding: 30px 0;
+    }
+
+    .cont-main-row {
+        padding-top: 20px;
+    }
+
+    .cont-frm-hldr {
+        gap: 10px;
+    }
+
+    .cont-frm-hldr .field {
+        grid-column: span 2;
+    }
+
+    .cont-frm-hldr .field input {
+        width: 100%;
+    }
+
+    .cont-frm-hldr .field input,
+    .cont-frm-hldr .field textarea {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 15px;
+        height: 45px;
+    }
+
+    .cont-frm-hldr .field input::placeholder,
+    .cont-frm-hldr .field textarea::placeholder {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .cont-frm-hldr .field textarea {
+        height: 150px;
+    }
+
+    /* contactMain */
 
 }

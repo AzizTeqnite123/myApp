@@ -102,10 +102,13 @@ function discountPopUpPercentage() {
     document.addEventListener('DOMContentLoaded', () => {
         const discountButton = document.getElementById("discountButton");
         const closePopup = document.getElementById("closePopup");
+        const closepopbtn = document.getElementById("closepopbtn");
 
         discountButton.addEventListener("click", togglePopupDiscount);
 
         closePopup.addEventListener("click", togglePopupDiscount);
+
+        closepopbtn.addEventListener("click", togglePopupDiscount);
 
         setTimeout(togglePopupDiscount, 3000);
     });
